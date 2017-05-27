@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Transicion al cargar imagenes - b-Lazy</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+      <figure class="contenedor">
+        <img class="b-lazy" src="Img/1x1.png" data-src="Img/bat-1.png" alt="bat1">
+      </figure>
+      <figure class="contenedor">
+        <img class="b-lazy" src="Img/1x1.png" data-src="Img/bat-2.png" alt="bat2">
+      </figure>
+      <figure class="contenedor">
+        <img  class="b-lazy" src="Img/1x1.png" data-src="Img/bat-3.png" alt="bat3">
+      </figure>
+      <figure class="display">
+        <div class="subcontent1">
+          <img class="b-lazy left" src="Img/1x1.png" data-src="Img/bat-4.png" alt="bat4">
+        </div>
+        <div class="subcontent2">
+          <img class="b-lazy right" src="Img/1x1.png" data-src="Img/bat-5.png" alt="bat5">
+        </div>
+      </figure>
+      <figure class="display">
+        <div class="subcontent3">
+          <img class="b-lazy left" src="Img/1x1.png" data-src="Img/bat-6.png" alt="bat6">
+        </div>
+        <div class="subcontent4">
+          <img class="b-lazy right" src="Img/1x1.png" data-src="Img/bat-7.png" alt="bat7">
+        </div>
+      </figure>
+      <figure class="contenedor">
+        <img class="b-lazy" src="Img/1x1.png" data-src="Img/bat-8.png" alt="bat8">
+      </figure>
+      <figure class="display">
+        <div class="subcontent5">
+          <img class="b-lazy left" src="Img/1x1.png" data-src="Img/bat-9.png" alt="bat9">
+        </div>
+        <div class="subcontent6">
+          <img class="b-lazy right" src="Img/1x1.png" data-src="Img/bat-10.png" alt="bat10">
+        </div>
+      </figure>
+      <figure class="contenedor">
+        <img class="b-lazy" src="Img/1x1.png" data-src="Img/bat-11.png" alt="bat11">
+      </figure>
+      <figure class="display">
+        <div class="subcontent3">
+          <img class="b-lazy left" src="Img/1x1.png" data-src="Img/bat-12.png" alt="bat12">
+        </div>
+        <div class="subcontent4">
+          <img class="b-lazy right" src="Img/1x1.png" data-src="Img/bat-13.png" alt="bat13">
+        </div>
+      </figure>
+      <figure class="display">
+        <div class="subcontent3">
+          <img class="b-lazy left" src="Img/1x1.png" data-src="Img/bat-14.png" alt="bat14">
+        </div>
+        <div class="subcontent4">
+          <img class="b-lazy right" src="Img/1x1.png" data-src="Img/bat-15.png" alt="bat15">
+        </div>
+      </figure>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>           <!-- Libreria para el blazy, optimizacion de imagenes -->
+    <script>
+    var bLazy = new Blazy({                                         //funcion para optimizar la carga de las imgenes
+     selector: "img"
+   });
+    </script>
+  </body>
+</html>
